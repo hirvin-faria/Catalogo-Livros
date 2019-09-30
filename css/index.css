@@ -1,0 +1,158 @@
+/* Declarações de Classes Globais */
+* {
+    /*
+    O box-sizing e utilizao para alterar o comportamento de bordar e tamanho dos elementos.
+    Por padrão o tamanho do elemento e calculado seu width + border.
+    Esse comando faz com que a borda seja incluida na declaração de width.
+    */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+}
+
+header {
+    background-color: #0066ff;
+    height: 5em;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: middle;
+}
+    
+header .container:before{
+    /*
+    :before seleciona o proximo elemento
+    informado no atributo content.
+    */
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 10px 0px;
+    border-bottom: 1px dashed rgb(187, 187, 187)
+}
+
+
+
+
+
+/*Declaração de classes do Perfil*/
+.perfil {
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+.img-perfil{
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+}
+
+#nome-perfil {
+    font-size: 2em;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+#bio-perfil {
+    margin: 15px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+
+
+/*Declaração de Classes da Tabela*/
+table {
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid red;
+    table-layout: fixed;
+}
+
+td, th{
+    border: 1px solid rgb(221, 221, 221);
+    padding: 0.5em;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #0066ff;
+    color: white;
+}
+
+
+/*Declaração de Classes do Formulário*/
+#formulario-adicionar-livro{
+    width: 50%;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 0px 20px;
+    padding-bottom: 15px;
+}
+
+.grupo-campos{
+    margin: 20px 0px;
+}
+
+.campo{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0px;
+    border: none;
+    border-bottom: 2px solid rgb(221, 221, 221); 
+}
+
+.campo[type=text]:focus {
+    background-color: lightblue;
+    border-bottom: 2px solid #0066ff; 
+}
+
+
+footer {
+    background-color: #0066ff;
+    height: 3em;
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+footer h3 {
+    font-size: 1,2em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

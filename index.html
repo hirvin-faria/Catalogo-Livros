@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Lista de Livros</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="book-icon.ico" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/button.css">
+
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Aplicação Meus Livros</h1>
+            </div>
+            
+        </header>
+        <main>
+            <section class="container">
+                <div class="perfil">
+                    <img class="img-perfil" src="img/perfil.png" alt="Imagem de perfil">
+
+                    <h2 id="nome-perfil">Hirvin Faria</h2>
+                    <button id="" class="btn-alt" onclick="alert('Este botão está funcionando corretamente!')">
+                        <img src="img/pen.png" alt="Imagem de um lápis, retirada do site https://icon-icons.com/icon/pen/96740">
+                    </button>
+
+                    <p id="bio-perfil">O desenvolvimento é uma grande aprendizagem.</p>
+                </div>
+                
+                
+                <div class="clear">
+                    <hr>
+                </div>
+
+            </section>
+
+            <section class="container">
+                    <h2>Livros</h2>
+                                    
+                    <p>Sua lista de livros preferidos</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Gênero</th>
+                                <th>Editora</th>
+                                <th>Avaliação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista-livros">
+                            <tr class="livro">
+                                <td class="info-titulo">JavaScript: O Guia Definitivo</td>
+                                <td class="info-genero">Computação</td>
+                                <td class="info-editora">Bookman</td>
+                                <td class="info-avaliacao">5</td>
+                            </tr>
+                            <tr class="livro">
+                                <td class="info-titulo">Html 5 e CSS 3 guia prático e visual</td>
+                                <td class="info-genero">Computação</td>
+                                <td class="info-editora">Alta Books</td>
+                                <td class="info-avaliacao">3</td>
+                            </tr>
+                            <tr class="livro">
+                                <td class="info-titulo">It: A Coisa</td>
+                                <td class="info-genero">Horror</td>
+                                <td class="info-editora">Suma</td>
+                                <td class="info-avaliacao">4</td>
+                            </tr>
+                            <tr class="livro">
+                                <td class="info-titulo">As Aventuras do Caça-Feitiço: O Inicio</td>
+                                <td class="info-genero">Aventura Juvenil</td>
+                                <td class="info-editora">Bertrand Brasil</td>
+                                <td class="info-avaliacao">5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section class="container">
+                <h2>Adicione um novo livro</h2>
+                <form id="formulario-adicionar-livro">
+                    <div class="grupo-campos">
+                        <label for="titulo">Título:</label>
+                        <input id="titulo" name="titulo" type="text" placeholder="Digite o título do livro" class="campo">
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="genero">Gênero:</label>
+                        <input id="genero" name="genero" type="text" placeholder="Digite o genero do livro" class="campo">
+                    </div>
+                    
+                    <div class="grupo-campos">
+                        <label for="editora">Editora:</label>
+                        <input id="editora" name="editora" type="text" placeholder="Digite a editora do livro" class="campo">
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="avaliacao">Avaliação:</label>
+                        <input id="avaliacao" name="avaliacao" type="text" placeholder="Digite o genero do livro" class="campo">
+                    </div>
+
+                    <button id="adicionar-livro" class="btn" onclick="alert('Ola Banana')">
+                        Adicionar
+                    </button>
+                </form>
+
+
+                
+
+            </section> 
+        </main>
+
+        <footer>
+            <div class="container">
+                <h3>Desenvolvido por Hirvin Faria</h3>
+            </div>
+        </footer>
+    </body>
+</html>
