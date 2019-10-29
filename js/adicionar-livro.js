@@ -1,11 +1,11 @@
-var botaoAdicionar = document.querySelector("#adicionar-livro")
-console.log(botaoAdicionar)
+var botaoAdicionar = document.querySelector("#adicionar-livro");
+console.log(botaoAdicionar);
 
 botaoAdicionar.addEventListener("click", function(){
-    event.preventDefault()
+    event.preventDefault();
 
-    var formulario = document.querySelector("#formulario-adicionar-livro")
-    console.log(formulario)
+    var formulario = document.querySelector("#formulario-adicionar-livro");
+    console.log(formulario);
 
     var livro = {
         titulo: formulario.titulo.value,
@@ -14,30 +14,30 @@ botaoAdicionar.addEventListener("click", function(){
         avaliacao: formulario.avaliacao.value
     }
 
-    console.log(livro)
+    console.log(livro);
 
-    var livroTr = document.createElement("tr")
+    var livroTr = document.createElement("tr");
 
-    var tituloTd = document.createElement("td")
-    var generoTd = document.createElement("td")
-    var editoraTd = document.createElement("td")
-    var avaliacaoTd = document.createElement("td")
+    var tituloTd = document.createElement("td");
+    var generoTd = document.createElement("td");
+    var editoraTd = document.createElement("td");
+    var avaliacaoTd = document.createElement("td");
 
-    tituloTd.textContent = livro.titulo
-    generoTd.textContent = livro.genero
-    editoraTd.textContent = livro.editora
-    avaliacaoTd.textContent = livro.avaliacao
+    tituloTd.textContent = livro.titulo;
+    generoTd.textContent = livro.genero;
+    editoraTd.textContent = livro.editora;
+    avaliacaoTd.textContent = livro.avaliacao;
+    avaliacaoTd.classList.add("text-center");
 
-    livroTr.appendChild(tituloTd)
-    livroTr.appendChild(generoTd)
-    livroTr.appendChild(editoraTd)
-    livroTr.appendChild(avaliacaoTd)
+    livroTr.appendChild(tituloTd);
+    livroTr.appendChild(generoTd);
+    livroTr.appendChild(editoraTd);
+    livroTr.appendChild(avaliacaoTd);
 
-    console.log(livroTr)
+    console.log(livroTr);
 
-    var tabelaLivros = document.querySelector("#lista-livros")
-    tabelaLivros.appendChild(livroTr)
+    var tabelaLivros = document.querySelector("#lista-livros");
+    tabelaLivros.appendChild(livroTr);
 
-    formulario.reset()
-
+    formulario.reset();
 })

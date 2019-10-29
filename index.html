@@ -1,127 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Lista de Livros</title>
+        <title>Catálogo de Livros</title>
         <meta charset="UTF-8">
         <link rel="icon" href="book-icon.ico" type="image/x-icon">
-
-        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/button.css">
-
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap-4.3.1/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/691e4cbc25.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/perfil.css">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <h1>Aplicação Meus Livros</h1>
-            </div>
-            
+        <header class="nav-bar-catalogo">
+            <nav class="navbar justify-content-center py-2">
+                <a class="navbar-brand h1 nav-bar-titulo" href="#">Catálogo de Livros</a>
+            </nav>
         </header>
+
         <main>
-            <section class="container">
-                <div class="perfil">
-                    <img class="img-perfil" src="img/perfil.png" alt="Imagem de perfil">
-
-                    <h2 id="nome-perfil">Hirvin Faria</h2>
-                    <button id="" class="btn-alt" onclick="alert('Este botão está funcionando corretamente!')">
-                        <img src="img/pen.png" alt="Imagem de um lápis, retirada do site https://icon-icons.com/icon/pen/96740">
-                    </button>
-
-                    <p id="bio-perfil">O desenvolvimento é uma grande aprendizagem.</p>
+            <section id="perfil" class="container mt-3">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2">
+                        <img id="img-perfil" class="mx-auto d-block" src="img/perfil.png" alt="Imagem de perfil">
+                    </div>
+                    <div class="col-sm-10 col-md-10">
+                        <h2 id="nome-perfil" class="display-4">Hirvin Faria</h2>
+                        <p id="bio-perfil" class="mb-0">O desenvolvimento é uma grande aprendizagem.</p>
+                    </div>
                 </div>
-                
-                
-                <div class="clear">
-                    <hr>
+            </section>
+            <section id="Livros" class="container mt-3">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="m-0">Livros</h2>
+                        <p>Sua lista de livros preferidos</p>        
+                    </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-12 table-responsive" >
+                        <table class="table table-bordered tabela">
+                            <thead>
+                                <tr class="cabecalho-tabela text-center">
+                                    <th scope="col">Título</th>
+                                    <th scope="col">Gênero</th>
+                                    <th scope="col">Editora</th>
+                                    <th scope="col">Avaliação</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lista-livros">
+                                <tr class="livro">
+                                    <td class="info-titulo">JavaScript: O Guia Definitivo</td>
+                                    <td class="info-genero">Computação</td>
+                                    <td class="info-editora">Bookman</td>
+                                    <td class="info-avaliacao text-center">5</td>
+                                </tr>
+                                <tr class="livro">
+                                    <td class="info-titulo">Html 5 e CSS 3 guia prático e visual</td>
+                                    <td class="info-genero">Computação</td>
+                                    <td class="info-editora">Alta Books</td>
+                                    <td class="info-avaliacao text-center">3</td>
+                                </tr>
+                                <tr class="livro">
+                                    <td class="info-titulo">It: A Coisa</td>
+                                    <td class="info-genero">Horror</td>
+                                    <td class="info-editora">Suma</td>
+                                    <td class="info-avaliacao text-center">4</td>
+                                </tr>
+                                <tr class="livro">
+                                    <td class="info-titulo">As Aventuras do Caça-Feitiço: O Inicio</td>
+                                    <td class="info-genero">Aventura Juvenil</td>
+                                    <td class="info-editora">Bertrand Brasil</td>
+                                    <td class="info-avaliacao text-center">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>    
             </section>
-
             <section class="container">
-                    <h2>Livros</h2>
-                                    
-                    <p>Sua lista de livros preferidos</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Título</th>
-                                <th>Gênero</th>
-                                <th>Editora</th>
-                                <th>Avaliação</th>
-                            </tr>
-                        </thead>
-                        <tbody id="lista-livros">
-                            <tr class="livro">
-                                <td class="info-titulo">JavaScript: O Guia Definitivo</td>
-                                <td class="info-genero">Computação</td>
-                                <td class="info-editora">Bookman</td>
-                                <td class="info-avaliacao">5</td>
-                            </tr>
-                            <tr class="livro">
-                                <td class="info-titulo">Html 5 e CSS 3 guia prático e visual</td>
-                                <td class="info-genero">Computação</td>
-                                <td class="info-editora">Alta Books</td>
-                                <td class="info-avaliacao">3</td>
-                            </tr>
-                            <tr class="livro">
-                                <td class="info-titulo">It: A Coisa</td>
-                                <td class="info-genero">Horror</td>
-                                <td class="info-editora">Suma</td>
-                                <td class="info-avaliacao">4</td>
-                            </tr>
-                            <tr class="livro">
-                                <td class="info-titulo">As Aventuras do Caça-Feitiço: O Inicio</td>
-                                <td class="info-genero">Aventura Juvenil</td>
-                                <td class="info-editora">Bertrand Brasil</td>
-                                <td class="info-avaliacao">5</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <p>
+                    <button class="btn botao-v" type="button" data-toggle="collapse" data-target="#CollapseCadastroMenu" aria-expanded="false" aria-controls="CollapseCadastroMenu">Cadastrar Livro</button>
+                    <button class="btn botao-v" type="button" data-toggle="collapse" data-target="#Informações" aria-expanded="false" aria-controls="Informações">Informações</button>
+                </p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="collapse multi-collapse mb-3" id="CollapseCadastroMenu">
+                            <div class="card card-body">
+                                <h3>Adicione um novo livro</h3>
+                                <form id="formulario-adicionar-livro">
+                                    <div class="form-group">
+                                        <label for="titulo">Título:</label>
+                                        <input id="titulo" class="form-control" name="titulo" type="text" placeholder="Digite o título do livro">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="genero">Gênero:</label>
+                                        <input id="genero" class="form-control" name="genero" type="text" placeholder="Digite o genero do livro">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="editora">Editora:</label>
+                                        <input id="editora" class="form-control" name="editora" type="text" placeholder="Digite a editora do livro">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="avaliacao">Avaliação:</label>
+                                        <label id="numberRange" for="avaliacao">3</label>
+                                        <input id="avaliacao" class="form-control-range" list="tickmarks" type="range" min="1" max="5">
+                                        <datalist id="tickmarks">
+                                                <option value="1" label="1">
+                                                <option value="2" label="2">
+                                                <option value="3" label="3">
+                                                <option value="4" label="4">
+                                                <option value="5" label="5">
+                                        </datalist>
+                                    </div>
+                                    <button id="adicionar-livro" class="btn botao-v">
+                                        Adicionar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="collapse multi-collapse mb-3" id="Informações">
+                            <div class="card card-body">
+                                <h3>Seja bem vindo</h3>
+                                <p>Este é um sistema de catálogo de livros, ele ainda está em desenvolvimento, mas você pode testar algumas funções.</p>
+                                <br>
+                                <p>Fique a vontade para testar e verificar o código, caso tenha alguma sugestão não deixe de falar</p>
+                                <p>Você pode entrar em contato comigo atráves de meu linkedin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-
-            <section class="container">
-                <h2>Adicione um novo livro</h2>
-                <form id="formulario-adicionar-livro">
-                    <div class="grupo-campos">
-                        <label for="titulo">Título:</label>
-                        <input id="titulo" name="titulo" type="text" placeholder="Digite o título do livro" class="campo">
-                    </div>
-
-                    <div class="grupo-campos">
-                        <label for="genero">Gênero:</label>
-                        <input id="genero" name="genero" type="text" placeholder="Digite o genero do livro" class="campo">
-                    </div>
-                    
-                    <div class="grupo-campos">
-                        <label for="editora">Editora:</label>
-                        <input id="editora" name="editora" type="text" placeholder="Digite a editora do livro" class="campo">
-                    </div>
-
-                    <div class="grupo-campos">
-                        <label for="avaliacao">Avaliação:</label>
-                        <input id="avaliacao" name="avaliacao" type="text" placeholder="Digite o genero do livro" class="campo">
-                    </div>
-
-                    <button id="adicionar-livro" class="btn">
-                        Adicionar
-                    </button>
-                </form>
-
-
-                
-
-            </section> 
         </main>
-
-        <footer>
+        <footer class="rodape py-3">
             <div class="container">
-                <h3>Desenvolvido por Hirvin Faria</h3>
+                <div class="row">
+                    <div class="col-12 col-sm-6 pb-3">
+                        <h2 class="titulo-rodape">Sobre o Projeto:</h2>
+                        <p>Sistema de catálogo de livros desenvolvido em JavaScript</p>
+                    </div>
+                    <div class="col-12 col-sm-6 pb-3">
+                        <h2 class="titulo-rodape">Sobre o Desenvolvedor:</h2>
+                        <a href="https://github.com/hirvin-faria">
+                            <i class="fab fa-github fa-2x mr-3"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hirvin-faria/">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center direito-autoral">Hirvin Faria - Desenvolvedor Web. Todos os direitos reservados. 2019</p>
             </div>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="css/bootstrap-4.3.1/js/bootstrap.min.js"></script>
         <script src="js/adicionar-livro.js"></script>
+        <script src="js/RangeButom.js"></script>
     </body>
 </html>

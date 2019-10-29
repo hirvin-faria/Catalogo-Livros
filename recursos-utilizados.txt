@@ -1,16 +1,8 @@
-reset.css {
-Esta o código deste arquivo de configuração css peguei do site (https://meyerweb.com/eric/tools/css/reset/)
-}
-
-book-icon.ico{
+﻿book-icon.ico{
 Este arquivo utilizado como icone para o projeto peguei do site icon-icons (https://icon-icons.com/pt/icone/livro-biblioteca-livros/76879#512)
 Sobre o uso de licença CC Atribution
 }
 
 perfil.png {
 A imagem foi retirada do pixabay (https://pixabay.com/pt/vectors/foto-do-perfil-em-branco-973460/)
-}
-
-pen.png {
-A imagem foi utilizada do site icon-icons (https://icon-icons.com/icon/pen/96740) sob licença de CC Atribution
 }
