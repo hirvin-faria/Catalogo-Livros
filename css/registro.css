@@ -1,0 +1,12 @@
+.cartao-registro {
+    max-width: 30em;
+    border-color: #056146;
+}
+
+#retornar-login {
+    color: #08B07D;
+}
+
+#retornar-login:hover {
+    color: #056146;
+}

@@ -1,0 +1,12 @@
+.cartao-login {
+    max-width: 22em;
+    border-color: #056146;
+}
+
+#registrar {
+    color: #08B07D;
+}
+
+#registrar:hover {
+    color: #056146;
+}

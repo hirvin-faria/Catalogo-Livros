@@ -69,3 +69,17 @@
     background-color: #08B07D;
     color: #FFF;
 }
+
+/*Declaração de Classes de Cartao*/
+.cabecalho-cartao {
+    background-color: #056146;
+    color: #FFF;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.backgroud-v {
+    background-color: #08B07D;
+}
