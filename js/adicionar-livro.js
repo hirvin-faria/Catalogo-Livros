@@ -40,4 +40,6 @@ botaoAdicionar.addEventListener("click", function(){
     tabelaLivros.appendChild(livroTr);
 
     formulario.reset();
+    var inputNumberRange = document.querySelector("#numberRange");
+    inputNumberRange.textContent = 3;
 })
